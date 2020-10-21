@@ -58,10 +58,40 @@ to compute and print
 
 sin(𝜋/4)"""
 
-
 import math
 x=math.pi/4
 
 print((math.sin(2*(x))/math.cos(x))/2)
+
+
+
+"""Write a program to print an n*n times table. n could be any number. For example, the following is a 5*5 times table:
+
+1 x 1 = 1
+
+1 x 2 = 2 2 x 2 = 4
+
+1 x 3 = 3 2 x 3 = 6 3 x 3 = 9
+
+1 x 4 = 4 2 x 4 = 8 3 x 4 = 12 4 x 4 = 16
+
+1 x 5 = 5 2 x 5 = 10 3 x 5 = 15 4 x 5 = 20 5 x 5 = 25"""
+
+First_number = int(input("Insert first number"))
+Second_number = int(input("Insert second number"))
+
+for i in range(1,First_number+1):
+    for j in range(1, i+1, 1):
+        print(str(j)+"x"+str(i)+"="+str(i*j),end=' ')
+    print("\n")
+
+
+"""Write a Python program to print 10 random integers between 1 and 100, 
+inclusive. Print one random integer per line. Use a loop. I have started the program for you."""
+
+import random
+
+for i in range(1,11):
+    print(random.randint(1,101))
 
 
